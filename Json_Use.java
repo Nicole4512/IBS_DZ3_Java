@@ -1,17 +1,11 @@
-package IBS_DZ3;
+package DZ3;
 
-
-public class Json_Use implements MapperTest{
+public class Json_Use {
     public static void main(String[] args) {
+        //Файл находится в resources
 
+        String fileName = "/file.json";
 
-
-
-        String fileName = "C:/Users/Николь/IdeaProjects/Dz1/src/IBS_DZ3/file.json";
-
-
-       MapperTest.parseJsonFile("C:/Users/Николь/IdeaProjects/Dz1/src/IBS_DZ3/file.json", Company.class);
-
+        MapperTest.parseJsonFile(fileName, Company.class);
     }
 }
-
